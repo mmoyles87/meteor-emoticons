@@ -8,7 +8,7 @@ set with your own icons by overwriting Meteor.settings.public.coreEmoticons.
 
 ## Quick Start
 ```bash
-$ meteor add dubvfan87:emoticons
+$ meteor add mattimo:emoticons
 ```
 
 You will get a new helper
