@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'dubvfan87:emoticons',
+  name: 'mattimo:emoticons',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'Helpers for image based emoticons in your application. You can easily add your own icons.',
@@ -59,6 +59,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('meteor-emoticons');
+  api.use('mattimo:emoticons');
   api.addFiles('meteor-emoticons-tests.js');
 });
