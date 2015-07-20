@@ -15,7 +15,9 @@ $ meteor add mattimo:emoticons
 
 You will get a new helper
 
+```javascript
 {{parseEmoticons "text"}}
+```
 
 ## Adding Extra Icons
 ```json
