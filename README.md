@@ -38,6 +38,9 @@ You will get a new helper
 ```
 
 ## Replacing Core Icons
+
+This will overwrite all of the core icons, so you need to define a full set.
+
 ```json
 {
   "public": {
