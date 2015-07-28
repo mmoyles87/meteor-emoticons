@@ -31,7 +31,7 @@ You will get a new helper
       {
         "image": "/path/to/something.png",
         "replacements": [":somethingcool:"]
-      },
+      }
     ]
   }
 }
@@ -52,7 +52,7 @@ This will overwrite all of the core icons, so you need to define a full set.
       {
         "image": "/path/to/wink.png",
         "replacements": [";)", ";-)"]
-      },
+      }
     ]
   }
 }
