@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mattimo:emoticons',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Helpers for image based emoticons in your application. You can easily add your own icons.',
   // URL to the Git repository containing the source code for this package.
@@ -52,7 +52,9 @@ Package.onUse(function(api) {
     'assets/images/emoticons/caritas_55.png',
     'assets/images/emoticons/caritas_56.png',
     'assets/images/emoticons/caritas_57.png',
-    'assets/images/emoticons/caritas_58.png'
+    'assets/images/emoticons/caritas_58.png',
+    'assets/images/emoticons/beer-chugger.gif',
+    'assets/images/emoticons/poop.png'
   ], 'client', {isAsset:true});
 
 });

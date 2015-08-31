@@ -145,11 +145,13 @@ specialRegex = new RegExp('(\\' + escapeCharacters.join('|\\') + ')', 'g')
 preMatch = '(^|[\\s\\0])'
 
 Template.registerHelper 'parseEmoticons', (text) ->
+  emoticons = Meteor.settings.public?.coreEmoticons
+  if Meteor.settings.public?.extraEmoticons
     emoticons = _.union(Meteor.settings.public?.coreEmoticons, Meteor.settings.public?.extraEmoticons)
 
-    _.each emoticons, (emoticon) ->
-      _.each emoticon.replacements, (replaceStr) ->
-        replaceStr = replaceStr.replace specialRegex, '\\$1'
-        match = new RegExp(preMatch + '(' + replaceStr + ')', 'g')
-        text = text.replace match, '<img class="meteoremoticon" src="' + emoticon.image + '">'
-    return text
+  _.each emoticons, (emoticon) ->
+    _.each emoticon.replacements, (replaceStr) ->
+      replaceStr = replaceStr.replace specialRegex, '\\$1'
+      match = new RegExp(preMatch + '(' + replaceStr + ')', 'g')
+      text = text.replace match, '<img class="meteoremoticon" src="' + emoticon.image + '">'
+  return text
