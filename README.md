@@ -19,6 +19,12 @@ You will get a new helper
 {{{parseEmoticons "text"}}}
 ```
 
+All emoticons output will have the meteoremoticon css class like so:
+
+```html
+<img class="meteoremoticon" src="{{url}}">
+```
+
 ## Adding Extra Icons
 ```json
 {
